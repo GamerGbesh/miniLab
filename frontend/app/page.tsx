@@ -44,8 +44,8 @@ export default function Home() {
     const headers = ["Name", "Email"];
   return (
       <div>
-          <TableSection headers={headers} row={students.map((d) => [d.name, d.email])} title={"Students"} />
           <AddStudent onSuccessAction={getStudents}/>
+          <TableSection headers={headers} row={students.map((d) => [d.name, d.email])} title={"Students"} />
       </div>
   );
 }
